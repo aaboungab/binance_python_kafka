@@ -54,7 +54,7 @@ def consume_avro_data(bootstrap_servers,topic,group):
             decoder = avro.io.BinaryDecoder(bytes_reader)
             reader = avro.io.DatumReader(avro_schema)
             message = reader.read(decoder)
-            print(f"{message}\n")
+            print(f"Message: {message}\n")
 
             # return message
 
