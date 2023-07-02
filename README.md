@@ -43,7 +43,7 @@ Start producer by running avro-producer.py to produce data into the Kafka cluste
 ```python
 python avro-producer.py
 ```
-Example output
+Example output:
 ```python
 record sent!
 JSON format: {"current_timestamp": "2023-07-02T03:56:00", "symbol": "BTCUSDT", "openPrice": 30420.54, "highPrice": 30661.6, "lowPrice": 30320.57, "prevClosePrice": 30420.53}
@@ -53,6 +53,11 @@ AVRO format: b'&2023-07-02T03:56:00\x0eBTCUSDT\x14\xa9\xedF3\x8b\xefF$\xe1\xecF\
 Start consumer to consume records from a topic
 ```python
 python avro-consumer.py
+```
+Example output:
+```python
+Response: {'topic': 'binance_btc_data', 'partition': 0, 'offset': 124}
+Message: {'current_timestamp': '2023-07-02T04:24:00', 'symbol': 'ETHUSDT', 'openPrice': 1920.1500244140625, 'highPrice': 1929.8699951171875, 'lowPrice': 1909.43994140625, 'prevClosePrice': 1920.1500244140625}
 ```
 
 # Purpose

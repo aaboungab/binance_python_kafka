@@ -42,13 +42,19 @@ def consume_avro_data(bootstrap_servers,topic,group):
             if msg.error():
                 print("Consumer error: {}".format(msg.error()))
                 continue
+            else:
+                response = {}
+                response['topic']= msg.topic()
+                response['partition']= msg.partition()
+                response['offset']= msg.offset()
+                print(f"\nResponse: {response}")
 
             # Deserialize the Avro data
             bytes_reader = io.BytesIO(msg.value())
             decoder = avro.io.BinaryDecoder(bytes_reader)
             reader = avro.io.DatumReader(avro_schema)
             message = reader.read(decoder)
-            print(message)
+            print(f"{message}\n")
 
             # return message
 
