@@ -20,7 +20,7 @@ set binance_api_key=YOUR_API_KEY
 set binance_api_secret=YOUR_SECRET_KEY
 ```
 - Running Kafka cluster (single or multinode)
-    - You can use the provided  [docker compose](https://github.com/aaboungab/binance_python_kafka/blob/main/docker-compose.yaml) file to launch a multi node Confluent Kafka cluster. Servies used:
+    - You can use the provided  [docker compose](https://github.com/aaboungab/binance_python_kafka/blob/main/docker-compose.yaml) file to launch a multi node Confluent Kafka cluster. Services used:
         1. Zookeeper
         2. Broker
         3. Schema Registry
