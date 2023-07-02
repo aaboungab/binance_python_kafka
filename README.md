@@ -1,5 +1,5 @@
 # Python, Binance & Kafka
-This repo contains python scripts for interacting with Kafka cluster and producing avro binance data of various crypto currencies
+This repo contains python scripts for interacting with Kafka cluster and producing Avro Binance data of various crypto currencies/
 
 ## Prerequisites
 
@@ -11,7 +11,7 @@ pip install -r requirements.txt
 - Binance account with your own api key and secret. 
  ```bash
  # linux commands to export vars containing binance account credentials
-export binance_api_keu=YOUR_API_KEY
+export binance_api_key=YOUR_API_KEY
 export binance_api_secret=YOUR_SECRET_KEY
 ```
  ```powershell
